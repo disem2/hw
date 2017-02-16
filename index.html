@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parse data</title>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <style type="text/css">
+        .table-container {
+            display: inline-block;
+            vertical-align: top;
+            width: 48%;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th,
+        table td {
+            border: 1px solid black;
+        }
+        .todo-id {
+            width: 30px;
+        }
+        .todo-completed {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="table-container">
+        <table id="allTodos">
+            <tr>
+                <th class="todo-id">ID</th>
+                <th class="todo-title">Title</th>
+                <th class="todo-completed">Is Completed</th>
+            </tr>
+        </table>
+    </div>
+    <div class="table-container">
+        <table id="completedTodos">
+            <tr>
+                <th class="todo-id">ID</th>
+                <th class="todo-title">Title</th>
+                <th  class="todo-completed">Is Completed</th>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
